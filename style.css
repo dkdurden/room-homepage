@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.first {
+  position: relative;
+}
+
+.toggle {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  max-width: 30px;
+  max-height: 30px;
+}
+.toggle i {
+  color: white;
+}
+
+.nav {
+  display: none;
+}
+
+.mobile-nav {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 75px;
+  padding-top: 2rem;
+}
+.mobile-nav__brand {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.collapse {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.collapse__close {
+  flex-basis: 20%;
+  margin-left: 2rem;
+}
+.collapse__nav {
+  flex-basis: 80%;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  text-transform: lowercase;
+  color: black;
+}
+
+.slider {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  background-color: black;
+  display: flex;
+  height: 60px;
+  width: 120px;
+}
+.slider__square {
+  flex-basis: 100%;
+  display: grid;
+  place-content: center;
+}
+.slider__icon {
+  height: 20px;
+  width: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
