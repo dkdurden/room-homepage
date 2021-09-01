@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,30 @@
 
 body {
   font-size: 1.2rem;
+  font-family: "Spartan", sans-serif;
+}
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+p {
+  line-height: 1.5;
+  color: #a1a1a1;
+  font-weight: 500;
+  margin-top: 1em;
 }
 
 a {
@@ -21,8 +46,88 @@ img {
   display: block;
 }
 
+@media (min-width: 500px) {
+  .small {
+    display: none;
+  }
+}
+
+.large {
+  display: none;
+}
+@media (min-width: 500px) {
+  .large {
+    display: block;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .split {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page > .group-1 {
+    max-height: 65vh;
+  }
+  .page > .group-2 {
+    max-height: 32vh;
+  }
+}
+
+.container {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.container.second {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.container.fourth {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .first {
   position: relative;
+}
+@media (min-width: 1200px) {
+  .first {
+    flex-basis: 60%;
+  }
+  .first .slider {
+    display: none;
+  }
+}
+
+.second {
+  position: relative;
+}
+.second .slider {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .second {
+    flex-basis: 40%;
+  }
+  .second .slider {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fourth {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .third,
+.fifth {
+    flex-basis: 30%;
+  }
 }
 
 .toggle {
@@ -96,6 +201,41 @@ img {
 .slider__icon {
   height: 20px;
   width: 10px;
+}
+@media (min-width: 1200px) {
+  .slider {
+    right: unset;
+    left: 0%;
+  }
+}
+
+.c2a {
+  display: flex;
+  margin-top: 4rem;
+}
+.c2a__icon {
+  width: 40px;
+  margin-left: 3.5rem;
+}
+.c2a__text {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .attribution {
+    position: fixed;
+    bottom: 0%;
+  }
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,22 +18,12 @@
 
     <title>Frontend Mentor | Room homepage</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    
   </head>
   <body>
     <!-- first page -->
-    <div class="container">
-      <div class="split-2">
-        <!-- first group, first item -->
+    <div class="page">
+      <div class="group-1 split">
         <div class="first">
           <!-- desktop nav -->
           <div class="nav">
@@ -60,7 +50,7 @@
           </div>
 
           <img class="small" src="./images/mobile-image-hero-1.jpg" alt="">
-          <!-- <img class="large" src="./images/desktop-image-hero-1.jpg" alt=""> -->
+          <img class="large" src="./images/desktop-image-hero-1.jpg" alt="">
 
           <!-- absolute nav-->
             <!-- <div class="collapse">
@@ -83,7 +73,7 @@
         </div>
 
         <!-- first group, second item -->
-        <div class="second">
+        <div class="second container">
           <h1>Discover innovative ways to decorate</h1>
 
           <p>
@@ -94,24 +84,28 @@
             you love.
           </p>
 
-          <div>
-            <span>Shop now</span>
-            <span>=></span>
+          <div class="c2a">
+            <span class="c2a__text">Shop now</span>
+            <img class="c2a__icon" src="./images/icon-arrow.svg" alt="">
           </div>
 
           <!-- absolute desktop slider -->
-          <!-- <div class="slider">
+          <div class="slider">
             <div class="slider__square"><img class="slider__icon" src="./images/icon-angle-left.svg" alt=""></div>
             <div class="slider__square"><img class="slider__icon" src="./images/icon-angle-right.svg" alt=""></div>
-          </div> -->
+          </div>
         </div>
       </div>
 
       <!-- second group -->
-      <div>
-        <div></div>
+      <div class="group-2 split">
+        <div class="third">
 
-        <div>
+
+          <img src="./images/image-about-dark.jpg" alt="">
+        </div>
+
+        <div class="container fourth">
           <h2>About our furniture</h2>
           <p>
             Our multifunctional collection blends design and function to suit
@@ -123,7 +117,9 @@
           </p>
         </div>
 
-        <div></div>
+        <div class="fifth">
+          <img src="./images/image-about-light.jpg" alt="">
+        </div>
       </div>
     </div>
 

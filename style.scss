@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,34 @@
 
 body {
   font-size: 1.2rem;
+  font-family: $ff-primary;
+
+  @media (min-width: 1200px) {
+    height: 100vh;
+  }
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1 {
+  // margin-top: 2.5em;
+}
+
+h2 {
+  // margin-top: 4em;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+p {
+  line-height: 1.5;
+  color: $font-dark;
+  font-weight: $medium;
+  margin-top: 1em;
 }
 
 a {
@@ -21,13 +51,93 @@ img {
   display: block;
 }
 
+.small {
+  @media (min-width: 500px) {
+    display: none;
+  }
+}
+
+.large {
+  display: none;
+
+  @media (min-width: 500px) {
+    display: block;
+    max-height: 100%;
+  }
+}
+
+.split {
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.page {
+  @media (min-width: 1200px) {
+    > .group-1 {
+      max-height: 65vh;
+    }
+
+    > .group-2 {
+      max-height: 32vh;
+    }
+  }
+}
+
+.container {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+  &.second {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  &.fourth {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 .first {
   position: relative;
-  //   background-image: url("./images/mobile-image-hero-1.jpg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: contain;
-  //   min-height: 50rem;
+
+  @media (min-width: 1200px) {
+    flex-basis: 60%;
+
+    .slider {
+      display: none;
+    }
+  }
+}
+
+.second {
+  position: relative;
+
+  .slider {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    flex-basis: 40%;
+
+    .slider {
+      display: flex;
+    }
+  }
+}
+
+.fourth {
+  @media (min-width: 1200px) {
+    flex-basis: 40%;
+  }
+}
+
+.third,
+.fifth {
+  @media (min-width: 1200px) {
+    flex-basis: 30%;
+  }
 }
 
 .toggle {
@@ -93,10 +203,6 @@ img {
   color: black;
 }
 
-.large {
-  //   display: none;
-}
-
 .slider {
   position: absolute;
   bottom: 0%;
@@ -116,4 +222,39 @@ img {
     height: 20px;
     width: 10px;
   }
+
+  @media (min-width: 1200px) {
+    right: unset;
+    left: 0%;
+  }
+}
+
+.c2a {
+  display: flex;
+  margin-top: 4rem;
+  // margin-bottom: 6rem;
+
+  &__icon {
+    width: 40px;
+    margin-left: 3.5rem;
+  }
+
+  &__text {
+    font-weight: $semi-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    position: fixed;
+    bottom: 0%;
+  }
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
