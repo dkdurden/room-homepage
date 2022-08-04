@@ -2,6 +2,8 @@
 
 ![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)
 
+https://nifty-goldwasser-6b17e5.netlify.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
